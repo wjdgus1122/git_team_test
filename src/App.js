@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Event } from "./components/pages/event/Event";
+import { Footer } from "./components/pages/Footer";
+import { Header } from "./components/pages/Header";
+import { Home } from "./components/pages/home/Home";
+import { Product } from "./components/pages/product/Product";
+import { GlobalStyle } from "./style/GlobalStyle";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Product />} />
+        <Route path="/" element={<Event />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
