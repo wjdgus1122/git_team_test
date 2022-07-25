@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Product />} />
-        <Route path="/" element={<Event />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/event" element={<Event />} />
       </Routes>
       <Footer />
     </Router>
