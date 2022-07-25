@@ -3,7 +3,7 @@ import { Event } from "./components/pages/event/Event";
 import { Footer } from "./components/pages/Footer";
 import { Header } from "./components/pages/Header";
 import { Home } from "./components/pages/home/Home";
-import { Product } from "./components/pages/product/Product";
+import { Products } from "./components/pages/products/Products";
 import { GlobalStyle } from "./style/GlobalStyle";
 
 function App() {
